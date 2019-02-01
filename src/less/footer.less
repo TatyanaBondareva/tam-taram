@@ -1,0 +1,120 @@
+.footer {
+	background-color: #252525;
+	padding: 30px 26px;
+	@media @tablet {
+		display: flex;
+		padding: 15px 15px 15px 19px;
+		justify-content: space-between;
+	}
+	@media @desktop {
+		    padding: 15px 29px 15px 19px;	
+		}
+}
+.nav {
+	margin-bottom: 120px;
+	list-style: none;
+	flex-wrap: wrap;
+	padding: 0;
+	display: flex;
+	@media @tablet {
+		order: 0;
+		width: 30%;
+		margin-top: 0;
+		padding: 0;
+		margin-bottom: 0;
+	}
+	@media @desktop {
+		display: flex;
+		flex-wrap: wrap;
+		width: 15%;
+		padding: 0 20px;	
+	}
+	&__item {
+		margin-right: 12px;
+		display: flex;
+	}
+	&__link {
+		font-size: 11px;
+		color: rgba(255, 255, 255, 0.5);
+		line-height: 1.15;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: "PT Sans";
+		font-weight: 400;
+		-webkit-font-smoothing: antialiased;
+		@media @desktop {
+			line-height: 1.5;	
+		}
+	}
+}
+.social {
+	display: flex;
+	padding: 0;
+	margin: 0 0 27px;
+	list-style: none;
+	@media @tablet {
+		order: 1;
+		padding: 4px 0 0;
+		margin: 0;
+		width: 35.5%;
+	}
+	@media @desktop {
+		width: 20.5%;	
+	}
+	&__item {
+		margin-right: 18px;
+	}
+	&__link {
+		display: inline-block;
+		opacity: 0.5;
+		background-repeat: no-repeat;
+	}
+	&__facebook {
+		background-image: url(../img/ico_facebook.svg);
+		height: 20px;
+		width: 14px;
+	}
+	&__twitter {
+		background-image: url(../img/ico_twitter.svg);
+		height: 18px;
+		width: 24px;;
+	}
+	&__pinterest {
+		background-image: url(../img/ico_pinterest.svg);
+		height: 20px;
+		width: 24px;
+	}
+	&__youtube {
+		background-image: url(../img/ico_youtube.svg);
+		height: 21px;
+		width: 21px;
+	}
+	&__instagram {
+		background-image: url(../img/ico_instagram.svg);
+		height: 22px;
+		width: 19px;
+	}
+}
+.location-wrapper {
+	margin-bottom: 38px;
+	@media @tablet {
+		margin-bottom: 0;
+		order: 2;
+	}
+}
+.location-block {
+	display: flex;
+	&__text {
+		font-size: 11px;
+		color: #cccccc;
+		font-family: "PT Sans";
+		font-weight: 400;
+		text-transform: uppercase;
+		opacity: .8;
+		margin-right: 3px;
+		line-height: 1.1;
+	}
+	@media @tablet {
+		justify-content: flex-end;
+	}
+}
