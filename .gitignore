@@ -1,4 +1,8 @@
 .idea/
 node_modules/
 .DS_Store
+<<<<<<< HEAD
 dist/
+=======
+dist/
+>>>>>>> e905cf3... Make desktop

@@ -6,7 +6,11 @@
 		padding: 15px 15px 15px 19px;
 		justify-content: space-between;
 	}
+<<<<<<< HEAD
 	@media @desktop {
+=======
+	@media (min-width:1200px) {
+>>>>>>> e905cf3... Make desktop
 		padding: 15px 29px 15px 19px;	
 	}
 }
@@ -23,11 +27,14 @@
 		padding: 0;
 		margin-bottom: 0;
 	}
-	@media @desktop {
+	@media (min-width:1200px) {
 		display: flex;
 		flex-wrap: wrap;
-		width: 15%;
+		width: 18%;
 		padding: 0 20px;	
+	}
+	@media (min-width:1435px) {
+		width: 17%;	
 	}
 	&__item {
 		margin-right: 12px;
@@ -42,7 +49,7 @@
 		font-family: "PT Sans";
 		font-weight: 400;
 		-webkit-font-smoothing: antialiased;
-		@media @desktop {
+		@media (min-width:1200px) {
 			line-height: 1.5;	
 		}
 		&:hover {
@@ -61,8 +68,8 @@
 		margin: 0;
 		width: 35.5%;
 	}
-	@media @desktop {
-		width: 20.5%;	
+	@media (min-width:1200px) {
+		width: 21.5%;	
 	}
 	&__item {
 		margin-right: 18px;
@@ -119,6 +126,9 @@
 		opacity: .8;
 		margin-right: 3px;
 		line-height: 1.1;
+		@media @desktop {
+			line-height: 1.35;
+		}
 	}
 	@media @tablet {
 		justify-content: flex-end;

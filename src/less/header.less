@@ -1,6 +1,6 @@
 .header {
 	margin-bottom: 13px;
-	@media @desktop {
+	@media (min-width:1200px) {
 		margin-bottom: 0px;
 	}
 	&__top {
@@ -11,7 +11,7 @@
 		@media @tablet {
 			padding: 24px 24px 14px 17px;
 		}
-		@media @desktop {
+		@media (min-width:1200px) {
 			padding: 21px 28px 14px 39px;
 			margin-bottom: 0px;
 		}
@@ -26,7 +26,8 @@
 			background-color: transparent;
 			padding: 13px 18px;
 		}
-		@media @desktop {
+		@media (min-width:1200px) {
+			margin: -9px 0 10px;
 			padding: 0;
 		}
 	}
@@ -40,7 +41,7 @@
 			flex: 1;
 			background-repeat: no-repeat;
 		}
-		@media @desktop {
+		@media (min-width:1200px) {
 			width: 49%;
 			height: 22px;
 			flex: none;
@@ -48,7 +49,7 @@
 	}
 	&__middle {
 		background-color: #262626;
-		@media @desktop {
+		@media (min-width:1200px) {
 			margin-bottom: 9px;
 		}
 	}
@@ -85,7 +86,7 @@
 		@media @tablet {
 			line-height: .8;
 		}
-		@media @desktop {
+		@media (min-width:1200px) {
 			font-size: 9px;
 			line-height: 0.5;
 		}
@@ -109,7 +110,7 @@
 		@media @tablet {
 			line-height: 1.2;
 		}
-		@media @desktop {
+		@media (min-width:1200px) {
 			font-size: 12px;
 		}
 	}
@@ -136,8 +137,12 @@
 		border: none;
 		outline: none;
 		background-color: transparent;
+<<<<<<< HEAD
 		cursor: pointer;
 		@media @desktop {
+=======
+		@media (min-width:1200px) {
+>>>>>>> e905cf3... Make desktop
 			height: 19px;
 			width: 22px;
 			background-repeat: no-repeat;
@@ -170,6 +175,9 @@
 		flex: 1;
 		border: none;
 		max-width: 77%;
+		@media @desktop {
+			max-width: 90%;
+		}
 	}
 	&__close {
 		background-image: url(../img/close.svg);
@@ -191,6 +199,9 @@
 		cursor: pointer;
 
 	}
+	@media (min-width:1200px) {
+		padding: 14px 29px 14px 39px;
+	}
 }
 .enter {
 	&::placeholder {
@@ -211,7 +222,7 @@ nav.main-navigation {
 	@media (min-width: 800px) {
 		justify-content: space-between;
 	}
-	@media @desktop {
+	@media (min-width:1200px) {
 		justify-content: center;
 	}
 }
@@ -228,7 +239,8 @@ nav.main-navigation {
 	&:hover {
 		background-color: #000;
 	}
-	@media @desktop {
+	@media (min-width:1200px)
+	{
 		padding: 11px 32px 8px 31px;
 	}
 
