@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('a.video-block').fancybox();
-	$('.video-wrapper').slick({
+	$('.video-wrapper').slick( {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		prevArrow: '',
@@ -8,10 +8,8 @@ $(document).ready(function() {
 		mobileFirst: true,
 		centerPadding: '0',
 		edgeFriction: 0,
-		//lazyLoad: 'progressive',
 		swipe: false,
-		//margin: '48px',
-	adaptiveHeight: true,
+		adaptiveHeight: true,
 		vertical: true,
 		responsive: [
 		{
@@ -44,7 +42,6 @@ $(document).ready(function() {
 				infinite: false,
 				centerPadding: '0',
 				autoSize: true,
-			//	edgeFriction: 0,
 				prevArrow: '<button class="video-button video-button_back"></button>',
 				nextArrow: '<button class="video-button video-button_go"></button>',
 				marginLeft: '48px',
@@ -59,7 +56,6 @@ $(document).ready(function() {
 				infinite: false,
 				centerPadding: '0',
 				autoSize: true,
-			//	edgeFriction: 0,
 				prevArrow: '<button class="video-wrapper__back"><<<</button>',
 				nextArrow: '<button class="playlist__button">load more</button>',
 				marginLeft: '48px',
@@ -75,8 +71,8 @@ $(document).ready(function() {
 				prevArrow: '<button class="video-wrapper__back">./button>',
 				nextArrow: '<button class="playlist__button">load more</button>',
 				centerPadding: '0',
-			verticalSwiping: true,
-			centerPadding: '0',
+				verticalSwiping: true,
+				centerPadding: '0',
 			}
 		},
 		]
@@ -85,7 +81,6 @@ $(document).ready(function() {
 	$('.search__button').on("click", openSearch);
 	$('#closeMenu').on("click", closeMobileMenu);
 	$('#openMenu').on("click", openMobileMenu);
-	//$('.search-form__close').on("click", closeSearch);
 });
 
 function openSearch() {
