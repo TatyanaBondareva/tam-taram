@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	$('a.video-block').fancybox();
+	$('a.main-video-block').fancybox();
 	$('.video-wrapper').slick( {
 		slidesToShow: 3,
 		slidesToScroll: 1,
