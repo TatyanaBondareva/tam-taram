@@ -15,7 +15,7 @@ $(document).ready(function() {
 		vertical: true,
 		responsive: [
 		{
-			breakpoint: 1200,
+			breakpoint: 1199,
 			settings: {
 				vertical: false,
 				slidesToShow: 3,
