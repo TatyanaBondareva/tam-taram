@@ -91,6 +91,7 @@ $(document).ready(function() {
 function openSearch() {
 	if ($(window).width() >= '767'){
 		$("#search").css('backgroundColor', '#000');
+		$("#search").css('animation', 'blick 2s  ease-in-out');
 	}
 	let tmp = '<form class="search-form"><input type="search" placeholder="Введите текст" class="search-form__enter enter"><input type="submit" class="search-form__search"><button class="search-form__close" onclick="closeSearch(event)"></button></form>';
 	$("#search").html(tmp);
@@ -106,6 +107,7 @@ function closeSearch() {
 
 function openMobileMenu() {
 	$('#headerMobileMenu').removeClass('mobile-list_hiden');
+	$("#headerMobileMenu").css('animation', 'blick 2s  ease-in-out');
 }
 function closeMobileMenu() {
 	$('#headerMobileMenu').addClass('mobile-list_hiden');

@@ -179,6 +179,10 @@
     display: none;
   }
 }
+.search {
+  -webkit-animation: blick 2s 1 ease-in-out;
+          animation: blick 2s 1 ease-in-out;
+}
 .search__button {
   background-image: url(../img/ico_search.svg);
   height: 24px;
@@ -336,6 +340,56 @@ nav.main-navigation {
 @media (min-width: 1200px) {
   .navigation-link {
     padding: 11px 32px 8px 31px;
+  }
+}
+@-webkit-keyframes blick {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blick {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes color {
+  from {
+    background-color: #000;
+    opacity: 1;
+  }
+  50% {
+    background-color: #000;
+    opacity: 0.5;
+  }
+  to {
+    background-color: transparent;
+    opacity: 1;
+  }
+}
+@keyframes color {
+  from {
+    background-color: #000;
+    opacity: 1;
+  }
+  50% {
+    background-color: #000;
+    opacity: 0.5;
+  }
+  to {
+    background-color: transparent;
+    opacity: 1;
   }
 }
 .mobile-list {
@@ -908,6 +962,17 @@ a.list-link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@keyframes blick {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .footer {
   background-color: #252525;
