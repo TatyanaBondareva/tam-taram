@@ -50,31 +50,8 @@ $(document).ready(function() {
 			}
 		},
 		{
-			breakpoint: 367,
-			settings: {
-				slidesToShow:  3,
-				slidesToScroll: 2,
-				infinite: false,
-				centerPadding: '0',
-				autoSize: true,
-				prevArrow: '<button class="video-wrapper__back"><<<</button>',
-				nextArrow: '<button class="playlist__button">load more</button>',
-				marginLeft: '48px',
-				vertical: true,
-			}
-		},
-		{
 			breakpoint: 219,
-			settings: {
-				vertical: true,
-				slidesToShow: 3,
-				slidesToScroll: 1,
-				prevArrow: '<button class="video-wrapper__back">./button>',
-				nextArrow: '<button class="playlist__button">load more</button>',
-				centerPadding: '0',
-				verticalSwiping: true,
-				centerPadding: '0',
-			}
+			settings: 'unslick'
 		},
 		]
 
@@ -82,29 +59,37 @@ $(document).ready(function() {
 	$('.search__button').on("click", openSearch);
 	$('#closeMenu').on("click", closeMobileMenu);
 	$('#openMenu').on("click", openMobileMenu);
+	$('.video-block:nth-child(-n+3)').css('display', 'flex');
+	$('.playlist__button').on("click", getAllList);
 });
 
 function openSearch() {
-	if ($(window).width() >= '767'){
-		$("#search").css('backgroundColor', '#000');
-		$("#search").css('animation', 'blick 2s  ease-in-out');
+	if ($(window).width() >= '767') {
+		$("#search").css({'backgroundColor': '#000', 'animation': 'blick 2s  ease-in-out'});
 	}
-	let tmp = '<form class="search-form"><input type="search" placeholder="Введите текст" class="search-form__enter enter"><input type="submit" class="search-form__search"><button class="search-form__close" onclick="closeSearch(event)"></button></form>';
-	$("#search").html(tmp);
+	$("#search-form").removeClass('screen_none');
+	$(".header-left-block_bottom").addClass('screen_none');
+	$(".search__button").addClass('screen_none');
 }
 
 function closeSearch() {
-	if ($(window).width() >= '767'){
+	if ($(window).width() >= '767') {
 		$("#search").css('backgroundColor', 'transparent');
-	}
-	let tmp = '<div class="header-left-block header-left-block_bottom"><button class="header-left-block__button-down"><span>nearest salon</span><div class="header-left-block__arrow"></div></button><div class="header-left-block__label">Plush Salon 92101</div></div><div class="search search_bottom"><button class="search__button"></button></div>';
-	$("#search").html(tmp);
+	}		
+	$("#search-form").addClass('screen_none');
+	$(".header-left-block_bottom").removeClass('screen_none');
+	$(".search__button").removeClass('screen_none');;
 }
 
 function openMobileMenu() {
 	$('#headerMobileMenu').removeClass('mobile-list_hiden');
-	$("#headerMobileMenu").css('animation', 'blick 2s  ease-in-out');
+	$("#headerMobileMenu").css('animation', 'blick 0.8s  ease-in-out');
 }
 function closeMobileMenu() {
 	$('#headerMobileMenu').addClass('mobile-list_hiden');
+}
+function getAllList() {
+	console.log($(this.closest('.playlist')).children('.video-wrapper').children('.video-block'));
+	$(this.closest('.playlist')).children('.video-wrapper').children('.video-block').css({'display': 'flex', 'animation': 'blick 1s  ease-in-out'});
+	$(this).prop( "disabled", true ).css('opacity','0.5');
 }

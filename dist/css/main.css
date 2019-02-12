@@ -45,12 +45,12 @@
 @media only screen and (min-width: 768px) {
   .header__bottom {
     background-color: transparent;
-    padding: 13px 18px;
+    padding: 0px 18px;
   }
 }
 @media (min-width: 1200px) {
   .header__bottom {
-    margin: -9px 0 10px;
+    margin: -9px 0 0px;
     padding: 0;
   }
 }
@@ -208,11 +208,19 @@
   }
 }
 .search_bottom {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 @media only screen and (min-width: 768px) {
   .search_bottom {
-    display: none;
+    width: 100%;
   }
 }
 .search-form {
@@ -237,6 +245,11 @@
           flex: 1;
   border: none;
   max-width: 77%;
+}
+@media only screen and (min-width: 768px) {
+  .search-form__enter {
+    max-width: 88%;
+  }
 }
 @media only screen and (min-width: 992px) {
   .search-form__enter {
@@ -465,7 +478,7 @@ a.list-link:hover {
 }
 @media (min-width: 1200px) {
   .path {
-    margin-bottom: 76px;
+    margin-bottom: 65px;
   }
 }
 .path__separator {
@@ -701,13 +714,11 @@ a.list-link:hover {
 }
 .video-block {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
-  margin-bottom: 47px;
+  margin-bottom: 49px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
       justify-content: center;
@@ -724,6 +735,9 @@ a.list-link:hover {
 @media only screen and (min-width: 768px) {
   .video-block:before {
     width: 76px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 73px;
   }
 }
@@ -812,6 +826,11 @@ a.list-link:hover {
   height: auto;
   min-height: 178px;
 }
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .video-block__image {
+    min-height: 100px;
+  }
+}
 .video-block_bottom {
   margin-bottom: 28px;
 }
@@ -860,6 +879,12 @@ a.list-link:hover {
   text-transform: uppercase;
   -ms-flex-item-align: center;
   align-self: center;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .playlist__button {
+    display: none;
+  }
 }
 .block-title {
   font-size: 30px;
@@ -1185,4 +1210,7 @@ body {
 }
 .menu_bottom .menu__link {
   color: #f00;
+}
+.screen_none {
+  display: none;
 }
