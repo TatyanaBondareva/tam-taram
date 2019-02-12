@@ -15,7 +15,7 @@
 		padding: 0 44px;
 	}
 	@media (min-width:1200px) {
-		margin-bottom: 76px;
+		margin-bottom: 65px;
 	}
 	&__separator {
 		padding: 2px 3px;
@@ -190,10 +190,10 @@
 }
 .video-block {
 	position: relative;
-	display: flex;
+	display: none;
 	-webkit-box-align: center;
 	align-items: center;
-	margin-bottom: 47px;
+	margin-bottom: 49px;
 	-webkit-box-pack: center;
 	justify-content: center;
 	&:before {
@@ -206,6 +206,7 @@
 		z-index: 1;
 		@media @tablet {
 			width: 76px;
+			display: flex;
 			height: 73px;
 		}
 	}
@@ -301,6 +302,10 @@
 		text-transform: uppercase;
 		-ms-flex-item-align: center;
 		align-self: center;
+		cursor: pointer;
+		@media @tablet {
+		display: none;	
+	}
 	}
 }
 .block-title {

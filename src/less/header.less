@@ -24,10 +24,10 @@
 		align-items: center;
 		@media @tablet {
 			background-color: transparent;
-			padding: 13px 18px;
+			padding: 0px 18px;
 		}
 		@media (min-width:1200px) {
-			margin: -9px 0 10px;
+			margin: -9px 0 0px;
 			padding: 0;
 		}
 	}
@@ -152,11 +152,14 @@
 		}
 	}
 	&_bottom {
-		display: block;
+		display: flex;
+		flex: 1;
+		justify-content: flex-end;
 		@media @tablet {
-			display: none;
+			width: 100%;
 		}
 	}
+
 }
 .search-form {
 	width: 100%;
@@ -171,6 +174,9 @@
 		flex: 1;
 		border: none;
 		max-width: 77%;
+		@media @tablet {
+			max-width: 88%;
+		}
 		@media @desktop {
 			max-width: 90%;
 		}
