@@ -1115,27 +1115,27 @@ a.list-link:hover {
   opacity: 1;
 }
 .social__facebook {
-  background-image: url(../img/ico_facebook.svg);
+  background-image: url(../../img/ico_facebook.svg);
   height: 20px;
   width: 14px;
 }
 .social__twitter {
-  background-image: url(../img/ico_twitter.svg);
+  background-image: url(../../img/ico_twitter.svg);
   height: 18px;
   width: 24px;
 }
 .social__pinterest {
-  background-image: url(../img/ico_pinterest.svg);
+  background-image: url(../../img/ico_pinterest.svg);
   height: 20px;
   width: 24px;
 }
 .social__youtube {
-  background-image: url(../img/ico_youtube.svg);
+  background-image: url(../../img/ico_youtube.svg);
   height: 21px;
   width: 21px;
 }
 .social__instagram {
-  background-image: url(../img/ico_instagram.svg);
+  background-image: url(../../img/ico_instagram.svg);
   height: 22px;
   width: 19px;
 }
