@@ -65,7 +65,7 @@ $(document).ready(function() {
 
 function openSearch() {
 	if ($(window).width() >= '767') {
-		$("#search").css({'backgroundColor': '#000', 'animation': 'blick 2s  ease-in-out'});
+		$("#search").css({'backgroundColor': '#000', 'animation': 'blick .5s  ease-in-out'});
 	}
 	$("#search-form").removeClass('screen_none');
 	$(".header-left-block_bottom").addClass('screen_none');
@@ -75,7 +75,7 @@ function openSearch() {
 function closeSearch() {
 	if ($(window).width() >= '767') {
 		$("#search").css('backgroundColor', 'transparent');
-	}		
+	}
 	$("#search-form").addClass('screen_none');
 	$(".header-left-block_bottom").removeClass('screen_none');
 	$(".search__button").removeClass('screen_none');;
